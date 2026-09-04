@@ -1,8 +1,8 @@
-E-commerce Sales Prediction
+# E-commerce Sales Prediction
 
 An end-to-end machine learning project for e-commerce sales analysis, future revenue prediction, and customer purchase prediction using SQL Server and Python.
 
-Project Overview
+## Project Overview
 
 The goal of this project is to use historical customer purchasing behavior to:
 
@@ -11,7 +11,7 @@ The goal of this project is to use historical customer purchasing behavior to:
 
 The project follows a complete workflow from data exploration and data cleaning to SQL database design, feature engineering, machine learning, model evaluation, and visualization.
 
-Dataset
+## Dataset
 
 This project uses the Online Retail dataset from the UCI Machine Learning Repository.
 
@@ -27,7 +27,7 @@ data/raw/
 
 The "data/raw/" and "data/processed/" directories are excluded from Git tracking through ".gitignore".
 
-Technologies
+## Technologies
 
 - Python
 - SQL Server
@@ -40,7 +40,7 @@ Technologies
 - Git & GitHub
 - Jupyter Notebook
 
-Project Structure
+## Project Structure
 
 ecommerce-sales-prediction/
 │
@@ -61,7 +61,7 @@ ecommerce-sales-prediction/
 ├── README.md
 └── requirements.txt
 
-Project Workflow
+## Project Workflow
 
 1. Data Exploration
 
@@ -127,7 +127,7 @@ For classification, future purchase activity was used to create the target varia
 
 Both regression and classification approaches were evaluated.
 
-Regression
+### Regression
 
 The following models were tested:
 
@@ -137,7 +137,7 @@ The following models were tested:
 
 Final Regression Model: Linear Regression
 
-Classification
+### Classification
 
 The following models were tested:
 
@@ -148,7 +148,7 @@ Final Classification Model: Logistic Regression
 
 Models were compared based on their evaluation metrics, and the best-performing models were selected as the final models.
 
-Model Evaluation
+## Model Evaluation
 
 Regression
 
@@ -170,7 +170,7 @@ ROC-AUC| 0.72
 
 Because the classification target is imbalanced, evaluation focused not only on accuracy but also on Precision, Recall, F1-score, and ROC-AUC.
 
-Visualizations
+## Visualizations
 
 The modeling notebook includes visualizations for model evaluation and interpretation, including:
 
@@ -181,7 +181,7 @@ The modeling notebook includes visualizations for model evaluation and interpret
 - ROC Curve
 - Target Distribution
 
-Key Findings
+## Key Findings
 
 The analysis showed that historical customer purchasing behavior provides useful information for predicting future revenue and purchase activity.
 
@@ -198,7 +198,7 @@ For the final Logistic Regression model:
 
 - "NumberOfOrders" was the strongest feature according to the model coefficients.
 
-How to Run
+## How to Run
 
 1. Clone the Repository
 
@@ -236,7 +236,7 @@ Update the SQL Server connection settings in the notebooks according to your loc
 
 6. Run the Notebooks
 
-Run the notebooks in the following order:
+### Run the notebooks in the following order:
 
 01_data_exploration.ipynb
         ↓
@@ -244,6 +244,6 @@ Run the notebooks in the following order:
         ↓
 03_modeling.ipynb
 
-Project Status
+## Project Status
 
 Completed — Final Version
